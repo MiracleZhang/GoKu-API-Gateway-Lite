@@ -27,6 +27,8 @@
 
 9. **快速部署**：支持手动部署与Docker部署。
 
+** 如需更强大的网关功能，欢迎使用eoLinker AGW：**https://github.com/eolinker/eoLinker-API-Gateway.git
+
 
 ### 部署要求
 ***
