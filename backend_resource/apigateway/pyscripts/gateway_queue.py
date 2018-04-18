@@ -39,7 +39,8 @@ def passDeleteGateway(hash_key):
 def deleteApiInfo(gateway_id,hash_key):
     # 删除apiInfo
     keys = r.keys("apiInfo:" + hash_key + "*")
-    r.delete(*keys)
+    if len(keys)>0:
+        r.delete(*keys)
 
 def loadAPIList(gateway_id, hash_key):
     conn = mysql_conn()

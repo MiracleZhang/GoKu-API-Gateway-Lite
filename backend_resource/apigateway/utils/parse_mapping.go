@@ -72,7 +72,12 @@ type BackendInfo struct{
 type GroupInfo struct{
 	GroupID int `json:"groupID"`
 	GroupName string `json:"groupName"`
-	ChildGroupList []*GroupInfo `json:"childGroupList,omitempty"`
+	ChildGroupList []*ChildGroupInfo `json:"childGroupList"`
+}
+
+type ChildGroupInfo struct{
+	GroupID int `json:"groupID"`
+	GroupName string `json:"groupName"`
 }
 
 type ApiInfo struct{

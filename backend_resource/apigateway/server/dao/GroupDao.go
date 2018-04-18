@@ -95,9 +95,13 @@ func GetGroupList(gatewayID int) (bool,[]*utils.GroupInfo){
 			childRows,err := db.Query(`SELECT eo_gateway_api_group.groupID,eo_gateway_api_group.groupName FROM eo_gateway_api_group WHERE gatewayID = ? AND isChild = 1 AND parentGroupID = ? ORDER BY eo_gateway_api_group.groupID DESC;`,gatewayID,group.GroupID)
 
 			for childRows.Next(){
-				var childGroup utils.GroupInfo
+				var childGroup utils.ChildGroupInfo
 				childRows.Scan(&childGroup.GroupID,&childGroup.GroupName)
 				group.ChildGroupList = append(group.ChildGroupList,&childGroup)
+			}
+			if group.ChildGroupList == nil{
+				childGroup := make([]*utils.ChildGroupInfo,0)
+				group.ChildGroupList = childGroup
 			}
 			groupList = append(groupList,&group)
 			num +=1

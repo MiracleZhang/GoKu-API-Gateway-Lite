@@ -39,7 +39,7 @@ func InjectRequestMapping(httpRequest *http.Request, context yawf.Context,
 	fmt.Println(len(requestURL))
 	fmt.Println(requestURL)
 	fmt.Println(domain)
-	if conf.Configure["is_debug"] != "true" && len(requestURL) <48 {
+	if conf.Configure["is_debug"] != "true" && len(requestURL) <41 {
 		httpResponse.WriteHeader(404)
 		return false, ""
 	}

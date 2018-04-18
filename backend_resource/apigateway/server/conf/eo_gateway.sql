@@ -1,4 +1,4 @@
-﻿USE gateway;
+﻿USE $user_name;
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------

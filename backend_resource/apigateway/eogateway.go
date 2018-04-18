@@ -6,7 +6,6 @@ import (
     "github.com/fvbock/endless"
     "log"
     "os"
-    // "log/loger"
 )
 func main() {
     router := gin.Default()
@@ -70,6 +69,7 @@ func main() {
             frequency.POST("/addFrequency",controller.AddFrequencyLimit)
             frequency.POST("/getFrequencyList",controller.GetFrequencyLimitList)
             frequency.POST("/checkFrequencyLimitIsExist",controller.CheckFrequencyLimitIsExist)
+            frequency.POST("/deleteFrequency",controller.DeleteFrequencyLimit)
         }
         install := web.Group("/Install")
         {
@@ -82,7 +82,6 @@ func main() {
         }
     }
     log.Println(os.Getpid())
-    // router.Run(":8080")
     err := endless.ListenAndServe(":8080",router)
     if err != nil {
 		log.Println(err)

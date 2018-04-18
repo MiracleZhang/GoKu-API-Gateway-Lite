@@ -6,7 +6,7 @@
 
 GoKu API Gateway Lite，通过Go语言开发的高性能API网关，支持私有云部署，实现API转发、请求参数转换、数据校验、IP黑白名单等功能，帮助减轻网络攻击对后端造成的影响。GoKu API Gateway Lite提供完全图形化的界面管理，能够快速管理多个API网关。
 
-如需更加强大的功能，推荐使用我们的GoKu API Gateway CE，链接：https://github.com/eolinker/GoKu-API-Gateway.git
+如需更加强大的功能，请使用我们的**GoKu API Gateway CE**，该开源项目已正式上线！链接：https://github.com/eolinker/GoKu-API-Gateway.git
 
 ## 特性
 
@@ -41,7 +41,6 @@ GoKu API Gateway Lite，通过Go语言开发的高性能API网关，支持私有
 
 ## 快速入门
 
-
 1. [安装指南](http://help.eolinker.com/agw/?target=/md/%E9%83%A8%E7%BD%B2/%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97 "安装指南") 
 
 2. [Docker安装指南](http://help.eolinker.com/agw/?target=/md/%E9%83%A8%E7%BD%B2/Docker%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97 "Docker安装指南")
@@ -54,7 +53,7 @@ GoKu API Gateway Lite，通过Go语言开发的高性能API网关，支持私有
 
 * 官方网站：https://agw.eolinker.com
 
-* Github：https://github.com/eolinker/eoLinker-API-Gateway-Lite
+* Github：https://github.com/eolinker/eoLinker-API-Gateway
 
 * Docker：https://hub.docker.com/r/eolinker/eolinker-api-gateway
 
