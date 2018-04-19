@@ -6,6 +6,7 @@ import (
     "github.com/fvbock/endless"
     "log"
     "os"
+    // "log/loger"
 )
 func main() {
     router := gin.Default()
@@ -82,10 +83,11 @@ func main() {
         }
     }
     log.Println(os.Getpid())
-    err := endless.ListenAndServe(":8080",router)
+    // router.Run(":8080")
+    err := endless.ListenAndServe(":8081",router)
     if err != nil {
 		log.Println(err)
 	}
-	log.Println("Server on 8080 stopped")
+	log.Println("Server on 8081 stopped")
 	os.Exit(0)
 }

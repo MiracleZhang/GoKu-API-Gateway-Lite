@@ -1,4 +1,4 @@
-﻿USE $user_name;
+﻿USE $mysql_dbname;
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
@@ -26,8 +26,8 @@ CREATE TABLE `eo_gateway` (
   `productType` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `endDate` datetime DEFAULT NULL,
   `hashKey` varchar(255) NOT NULL,
-  `updateTime` datetime NOT NULL,
-  `createTime` datetime NOT NULL,
+  `updateTime` datetime NULL,
+  `createTime` datetime NULL,
   PRIMARY KEY (`gatewayID`,`hashKey`,`token`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
@@ -165,7 +165,7 @@ DROP TABLE IF EXISTS `eo_gateway_ip_cache`;
 CREATE TABLE `eo_gateway_ip_cache` (
   `cacheID` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `ip` varchar(15) NOT NULL,
-  `createTime` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+  `createTime` timestamp NULL,
   PRIMARY KEY (`cacheID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
