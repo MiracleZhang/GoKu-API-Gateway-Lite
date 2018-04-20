@@ -1,10 +1,12 @@
 # GoKu API Gateway Lite（悟空API网关 轻量版）
 
+![](http://data.eolinker.com/course/EzXUVqd0eebf81a40ba53f6f802a7e36c82bca515a0d047)
+
 ## 简介
 
 **GoKu API Gateway Lite，中文名：悟空API网关 轻量版，是国内首个开源Go语言API网关，帮助企业进行API服务治理，为企业数字化赋能。**
 
-GoKu API Gateway Lite，通过Go语言开发的高性能API网关，支持私有云部署，实现API转发、请求参数转换、数据校验、IP黑白名单等功能，帮助减轻网络攻击对后端造成的影响。GoKu API Gateway Lite提供完全图形化的界面管理，能够快速管理多个API网关。
+GoKu API Gateway Lite，通过Go语言开发的API网关，支持私有云部署，实现API转发、请求参数转换、数据校验、IP黑白名单等功能，帮助减轻网络攻击对后端造成的影响。GoKu API Gateway Lite提供完全图形化的界面管理，能够快速管理多个API网关。
 
 如需更加强大的功能，请使用我们的**GoKu API Gateway CE**，该开源项目已正式上线！链接：https://github.com/eolinker/GoKu-API-Gateway.git
 
@@ -58,3 +60,15 @@ GoKu API Gateway Lite，通过Go语言开发的高性能API网关，支持私有
 * Docker：https://hub.docker.com/r/eolinker/eolinker-api-gateway
 
 * 教程文档：http://help.eolinker.com/agw
+
+
+## 更新日志
+
+#### V1.0.2（2018/4/20）
+优化:
+1. 界面显示。
+
+
+修复：
+
+1. 修复mysql5.7环境下，sql脚本执行失败。
